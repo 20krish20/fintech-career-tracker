@@ -2,17 +2,17 @@ KEYWORDS = [
     "data engineer",
     "analytics engineer",
     "data platform",
-    "ai data",
     "data infrastructure",
-    "platform engineer",
     "ml engineer",
     "ai engineer",
     "machine learning engineer",
+    "data scientist",
+    "data analyst",
+    "analytics",
 ]
 
-# ── Verified working companies ─────────────────────────────────────────────────
 COMPANIES = [
-    # ── Greenhouse ────────────────────────────────────────────────────────────
+    # ── BATCH 1 ───────────────────────────────────────────────────────────────
     {"name": "Stripe",          "type": "greenhouse", "token": "stripe"},
     {"name": "Anthropic",       "type": "greenhouse", "token": "anthropic"},
     {"name": "Scale AI",        "type": "greenhouse", "token": "scaleai"},
@@ -25,30 +25,44 @@ COMPANIES = [
     {"name": "Perpay",          "type": "greenhouse", "token": "perpay"},
     {"name": "ComplyAdvantage", "type": "greenhouse", "token": "complyadvantage"},
     {"name": "Relativity",      "type": "greenhouse", "token": "relativity"},
-    # ── Ashby ─────────────────────────────────────────────────────────────────
-    {"name": "Vanta",           "type": "ashby", "token": "vanta"},
-    {"name": "Drata",           "type": "ashby", "token": "drata"},
-    {"name": "Cohere",          "type": "ashby", "token": "cohere"},
-    # ── Lever ─────────────────────────────────────────────────────────────────
-    {"name": "Palantir",        "type": "lever", "token": "palantir"},
-    {"name": "Plaid",           "type": "lever", "token": "plaid"},
-    # ── Custom HTML scrape ────────────────────────────────────────────────────
-    {
-        "name": "Citi",
-        "type": "custom_citi",
-        "url": "https://jobs.citi.com/search-jobs/data%20engineer/287/1",
-    },
+    {"name": "Vanta",           "type": "ashby",      "token": "vanta"},
+    {"name": "Drata",           "type": "ashby",      "token": "drata"},
+    {"name": "Cohere",          "type": "ashby",      "token": "cohere"},
+    {"name": "Palantir",        "type": "lever",      "token": "palantir"},
+    {"name": "Plaid",           "type": "lever",      "token": "plaid"},
+    {"name": "Citi", "type": "custom_citi", "url": "https://jobs.citi.com/search-jobs/data%20engineer/287/1"},
+    # ── BATCH 2 ───────────────────────────────────────────────────────────────
+    {"name": "Chime",           "type": "greenhouse", "token": "chime"},
+    {"name": "Robinhood",       "type": "greenhouse", "token": "robinhood"},
+    {"name": "SoFi",            "type": "greenhouse", "token": "sofi"},
+    {"name": "Upstart",         "type": "greenhouse", "token": "upstart"},
+    {"name": "Gusto",           "type": "greenhouse", "token": "gusto"},
+    {"name": "Nubank",          "type": "greenhouse", "token": "nubank"},
+    {"name": "Gemini",          "type": "greenhouse", "token": "gemini"},
+    {"name": "Ripple",          "type": "greenhouse", "token": "ripple"},
+    {"name": "Oportun",         "type": "greenhouse", "token": "oportun"},
+    {"name": "Nova Credit",     "type": "greenhouse", "token": "novacredit"},
+    {"name": "Adyen",           "type": "greenhouse", "token": "adyen"},
+    {"name": "Lithic",          "type": "greenhouse", "token": "lithic"},
+    {"name": "Federato",        "type": "greenhouse", "token": "federato"},
+    {"name": "Carta",           "type": "greenhouse", "token": "carta"},
+    {"name": "Coinbase",        "type": "greenhouse", "token": "coinbase"},
+    {"name": "Figure",          "type": "greenhouse", "token": "figure"},
+    {"name": "Blend",           "type": "greenhouse", "token": "blend"},
+    {"name": "Truework",        "type": "greenhouse", "token": "truework"},
+    {"name": "Lob",             "type": "greenhouse", "token": "lob"},
+    {"name": "Melio",           "type": "greenhouse", "token": "melio"},
+    {"name": "Ramp",            "type": "ashby",      "token": "ramp"},
+    {"name": "Sardine",         "type": "ashby",      "token": "sardine"},
+    {"name": "Chainalysis",     "type": "ashby",      "token": "chainalysis-careers"},
+    {"name": "Column",          "type": "ashby",      "token": "column"},
+    {"name": "Modern Treasury", "type": "ashby",      "token": "moderntreasury"},
+    {"name": "Amount",          "type": "greenhouse", "token": "amount"},
+    {"name": "Argyle",          "type": "greenhouse", "token": "argyle"},
+    {"name": "Bilt Rewards",    "type": "greenhouse", "token": "biltrewards"},
+    {"name": "Pave",            "type": "greenhouse", "token": "pave"},
+    {"name": "Promise",         "type": "ashby",      "token": "promise"},
 ]
 
-# ── Manual check list (Workday / anti-bot) ────────────────────────────────────
-# These block programmatic access. Check manually once a week:
-#   Capital One  → https://capitalone.wd1.myworkdayjobs.com/Capital_One
-#   JPMorgan     → https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001
-#   Goldman Sachs→ https://www.goldmansachs.com/careers/search
-#   Visa         → https://jobs.visa.com
-#   Bloomberg    → https://careers.bloomberg.com
-#   Fidelity     → https://jobs.fidelity.com
-#   Booz Allen   → https://careers.boozallen.com
-#   Morgan Stanley → https://morganstanley.tal.net
-#   Leidos       → https://careers.leidos.com
-#   Innovaccer   → https://innovaccer.com/careers
+# Manual (Workday / blocked): Capital One, JPMorgan, Goldman Sachs, Visa,
+# Bloomberg, Fidelity, Booz Allen, Morgan Stanley, Leidos
